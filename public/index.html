@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="fsh1994">
+        <title>chat room</title>
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="window">
+            <div class="banner">
+                <h1>Welcome to chat room</h1>
+                <span id="status"></span>
+            </div>
+            <div id="historyMsg">
+            </div>
+            <div class="controls" >
+                <textarea id="messageInput" placeHolder="enter to send"></textarea>
+                <input id="sendBtn" type="button" value="SEND">
+            </div>
+        </div>
+        <div id="loginWrapper">
+            <p id="info">connecting to server...</p>
+            <div id="nickWrapper">
+                <input type="text" placeHolder="nickname" id="nicknameInput" />
+                <input type="button" value="OK" id="loginBtn" />
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="javascripts/chat.js"></script>
+    </body>
+</html>

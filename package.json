@@ -1,0 +1,9 @@
+{
+  "name": "chatroom_3",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.15.4",
+    "socket.io": "^2.0.3",
+    "mysql": "^2.14.1"
+  }
+}
